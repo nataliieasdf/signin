@@ -12,7 +12,16 @@ $('.signin').on('click', function(e){
 			$('input').removeClass('error');
 		});
 
-	});
+	})
+		.on('click', function(e){
+			$('.modal').fadeOut(300);
+
+			$('form').on('click', function(e){
+				event.stopPropagation();
+			});
+		})
+	;
 
 });
+
 
