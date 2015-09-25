@@ -8,11 +8,11 @@ $('.signin').on('click', function(e){
 			$('input').addClass('error');
 		});
 
+		$('input').on('click', function(e){
+			$('input').removeClass('error');
+		});
+
 	});
 
 });
 
-
-		// $('.submit').on('click', function(e){
-		// 	$('input').addClass('error');
-		// });
